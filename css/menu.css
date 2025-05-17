@@ -1,6 +1,6 @@
 /* Menu Hero Section */
 .menu-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Amusement-park-website/images/menu.images/menu-background.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/menu.images/menu-background.png');
     background-size: cover;
     background-position: center;
     height: 500px;
