@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment - Merciado Amusement Park</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/entertainment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="sky-wheel">
+                    <img src="./images/logo/logo2.png" alt="Sky Wheel" class="wheel-img">
+                </div>
+            
+                <!-- Center Title -->
+                <div class="mx-auto gradient-text">
+                    MERCIADO AMUSEMENT PARK
+                </div>
+            </div>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./zones.html">Zones & Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./tickets.html">Tickets & Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <a href="./login.html" class="btn-login">Login</a>
+                        <a href="./register.html" class="btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Entertainment Hero Section -->
+    <section class="entertainment-hero">
+        <div class="entertainment-hero-content">
+            <h1>Live Entertainment</h1>
+            <p>Experience unforgettable shows and performances</p>
+        </div>
+    </section>
+
+    <!-- Shows Section -->
+    <section class="shows-section">
+        <div class="shows-container">
+            <h2>Daily Shows & Performances</h2>
+            <div class="shows-grid">
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Circus-Spectacular.png" alt="Circus Show">
+                        <div class="show-time">3:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Circus Spectacular</h3>
+                        <p>An amazing display of acrobatics, juggling, and clown performances.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Stage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Magic-Kingdom.png" alt="Magic Show">
+                        <div class="show-time">5:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Magic Kingdom</h3>
+                        <p>Mind-blowing magic tricks and illusions that will leave you amazed.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Magic Theater</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Dance-Extravaganza.png" alt="Dance Performance">
+                        <div class="show-time">7:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Dance Extravaganza</h3>
+                        <p>High-energy dance performances featuring various styles and cultures.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 1 hour</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Dance Arena</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Puppet-Wonderland.png" alt="Puppet Show">
+                        <div class="show-time">11:00 AM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Puppet Wonderland</h3>
+                        <p>Delightful puppet show featuring classic fairy tales and original stories.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Puppet Theater</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Gravity-Defiers.png" alt="Acrobatic Show">
+                        <div class="show-time">2:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Gravity Defiers</h3>
+                        <p>Breathtaking acrobatic performances with stunning aerial displays.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Aerial Arena</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Musical-Journey.png" alt="Musical Show">
+                        <div class="show-time">4:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Musical Journey</h3>
+                        <p>Live musical performance featuring popular songs and original compositions.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 1 hour</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Music Hall</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Comedy-Show.png" alt="Comedy Show">
+                        <div class="show-time">6:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Laugh Factory</h3>
+                        <p>Hilarious comedy show featuring stand-up and improv performances.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Comedy Club</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Animal-Show2.png" alt="Animal Show">
+                        <div class="show-time">12:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Animal Adventures</h3>
+                        <p>Educational and entertaining show featuring trained animals and their handlers.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 40 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Animal Arena</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Animal-Show.png" alt="Water Show">
+                        <div class="show-time">8:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Aqua Spectacle</h3>
+                        <p>Stunning water-based performance with synchronized swimming and fountains.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Water Stage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Circus-Show.png" alt="Circus Show">
+                        <div class="show-time">1:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Circus of Dreams</h3>
+                        <p>Classic circus performance with trapeze artists and animal acts.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 1 hour</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Big Top</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Street-Performance.png" alt="Street Performance">
+                        <div class="show-time">10:00 AM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Street Performers</h3>
+                        <p>Interactive street performances throughout the park featuring various artists.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 20 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Park Streets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="./images/entertainment.images/Light-Show.png" alt="Light Show">
+                        <div class="show-time">9:00 PM</div>
+                    </div>
+                    <div class="show-content">
+                        <h3>Light Fantasy</h3>
+                        <p>Mesmerizing light and laser show synchronized with music.</p>
+                        <div class="show-details">
+                            <span><i class="fas fa-clock"></i> 25 min</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Central Plaza</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Events Section -->
+    <section class="events-section">
+        <div class="events-container">
+            <h2>Special Events</h2>
+            <div class="events-timeline">
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/summer-music-festival.png" alt="Summer Music Festival">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">JUN</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Summer Music Festival</h3>
+                        <p>Join us for an unforgettable day of live music featuring top artists and bands from around the world. Experience multiple stages with different music genres, food trucks, and interactive activities. Perfect for music lovers of all ages!</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 12:00 PM - 10:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Stage & Park Grounds</span>
+                        </div>
+                        <a href="./tickets.html#summer-festival" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/fireworks.png" alt="Fireworks Night">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">JUN</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Fireworks Night</h3>
+                        <p>Witness a breathtaking fireworks display synchronized with a live orchestra performance. Special viewing areas, food vendors, and entertainment throughout the evening. A magical experience for the whole family!</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 8:00 PM - 11:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Central Plaza</span>
+                        </div>
+                        <a href="./tickets.html#fireworks" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/entertainment.images/Character-Parade.png" alt="Character Parade">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">JUN</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Character Parade</h3>
+                        <p>Join our beloved characters in a spectacular parade through the park! Featuring elaborate floats, live music, and interactive performances. Meet and greet opportunities with your favorite characters throughout the day.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 11:00 AM - 4:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Park Main Street</span>
+                        </div>
+                        <a href="./tickets.html#character-parade" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/Independence-Day-Celebration.png" alt="Independence Day Celebration">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">4</span>
+                        <span class="month">JUL</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Independence Day Celebration</h3>
+                        <p>Celebrate with patriotic shows, marching bands, and a grand parade. Special evening fireworks display with patriotic music. Food vendors and family activities throughout the day.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Plaza & Park Grounds</span>
+                        </div>
+                        <a href="./tickets.html#independence-day" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/circus.png" alt="Circus Extravaganza">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">JUL</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Circus Extravaganza</h3>
+                        <p>Experience the wonder of our world-class circus featuring acrobats, aerialists, and amazing animal performances. Special workshops and meet-the-performers sessions available throughout the day.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 2:00 PM - 9:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Big Top Arena</span>
+                        </div>
+                        <a href="./tickets.html#circus" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/entertainment.images/Water-Carnival.png" alt="Water Carnival">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">1</span>
+                        <span class="month">AUG</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Water Carnival</h3>
+                        <p>Dive into fun with our special water-based activities! Enjoy synchronized swimming shows, water acrobatics, and interactive water games. Special water-themed food and drinks available.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 11:00 AM - 8:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Water Park & Main Pool</span>
+                        </div>
+                        <a href="./tickets.html#water-carnival" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/entertainment.images/Magic-Festival.png" alt="Magic Festival">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">AUG</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Magic Festival</h3>
+                        <p>Be amazed by world-renowned magicians performing their most spectacular tricks! Multiple stages with different magic styles, from close-up magic to grand illusions. Magic workshops for aspiring magicians.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 1:00 PM - 10:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Magic Theater & Park Grounds</span>
+                        </div>
+                        <a href="./tickets.html#magic-festival" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/entertainment.images/Dance-Showdown.png" alt="Dance Showdown">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">1</span>
+                        <span class="month">SEP</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Dance Showdown</h3>
+                        <p>Watch professional dance crews compete in various styles including hip-hop, contemporary, and breakdancing. Interactive dance workshops and meet-and-greet sessions with the performers.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 3:00 PM - 11:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Dance Arena</span>
+                        </div>
+                        <a href="./tickets.html#dance-showdown" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/entertainment.images/Acrobatics-Championship.png" alt="Acrobatics Championship">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">SEP</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Acrobatics Championship</h3>
+                        <p>Witness breathtaking acrobatic performances from around the world. Multiple stages featuring aerial acts, contortionists, and gravity-defying stunts. Special workshops for aspiring acrobats.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 2:00 PM - 9:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Aerial Arena</span>
+                        </div>
+                        <a href="./tickets.html#acrobatics" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/hallowen.png" alt="Halloween Spooktacular">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">31</span>
+                        <span class="month">OCT</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Halloween Spooktacular</h3>
+                        <p>Experience our special haunted attractions, spooky shows, and trick-or-treating throughout the park. Special family-friendly and adult-only areas. Costume contests and Halloween-themed food.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 6:00 PM - 11:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Haunted Zone & Park Grounds</span>
+                        </div>
+                        <a href="./tickets.html#halloween" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/Christmas-Wonderland.png" alt="Christmas Wonderland">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">25</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Christmas Wonderland</h3>
+                        <p>Immerse yourself in the magic of Christmas with special holiday performances, meet Santa Claus, and enjoy festive decorations throughout the park. Special Christmas-themed food and activities.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Main Plaza & Park Grounds</span>
+                        </div>
+                        <a href="./tickets.html#christmas" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-image">
+                        <img src="./images/New-Year_s-Eve-Celebration(1).png" alt="New Year's Eve Celebration">
+                    </div>
+                    <div class="event-date">
+                        <span class="day">31</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>New Year's Eve Celebration</h3>
+                        <p>Ring in the new year with spectacular shows, live music, and a breathtaking fireworks display at midnight. Special dining packages and VIP viewing areas available.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 8:00 PM - 1:00 AM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Central Plaza</span>
+                        </div>
+                        <a href="./tickets.html#new-year" class="btn-secondary">Get Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href=".about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <li><a href="./sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@merciado.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Park Avenue, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Merciado Amusement Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

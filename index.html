@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merciado Amusement Park</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="container">
+            <div class="sky-wheel">
+                <img src="./images/logo/logo2.png" alt="Sky Wheel" class="wheel-img">
+            </div>
+        
+            <!-- Center Title -->
+            <div class="mx-auto gradient-text">
+                MERCIADO AMUSEMENT PARK
+            </div>
+        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Merciado Amusement Park</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./zones.html">Zones & Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./tickets.html">Tickets & Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <a href="./login.html" class="btn-login">Login</a>
+                        <a href="./register.html" class="btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Carousel -->
+    <section class="hero">
+        <div class="video-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <video class="carousel-video" autoplay muted loop>
+                        <source src="./video/hero-section-1.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-content">
+                        <h2>Thrilling Adventures</h2>
+                        <p>Experience the excitement of our world-class roller coasters and thrilling rides</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <video class="carousel-video" autoplay muted loop>
+                        <source src="./video/hero-section-2.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-content">
+                        <h2>Water Wonderland</h2>
+                        <p>Dive into fun with our amazing water attractions and splash zones</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <video class="carousel-video" autoplay muted loop>
+                        <source src="./video/hero-section-3.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-content">
+                        <h2>Family Fun</h2>
+                        <p>Create lasting memories with our family-friendly attractions and shows</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <video class="carousel-video" autoplay muted loop>
+                        <source src="./video/hero-section-5.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-content">
+                        <h2>Dining Delights</h2>
+                        <p>Savor delicious meals and treats from our diverse dining options</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <video class="carousel-video" autoplay muted loop>
+                        <source src="./video/hero-section-4.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-content">
+                        <h2>Live Entertainment</h2>
+                        <p>Enjoy spectacular shows and performances throughout the day</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <video class="carousel-video" autoplay muted loop>
+                        <source src="./video/hero-section-6.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="carousel-content">
+                        <h2>Special Events</h2>
+                        <p>Join us for seasonal celebrations and special park events</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-indicators"></div>
+        </div>
+    </section>
+
+    <!-- Featured Attractions -->
+    <section class="featured-section">
+        <div class="section-header">
+            <h2 style="color: #ff4d4d;">Featured Attractions</h2>
+            <p>Discover our most popular rides and experiences</p>
+        </div>
+        <div class="attractions-grid">
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/roller-coaster.png" alt="Thunderbolt Roller Coaster">
+                    <div class="card-overlay">
+                        <span class="rating">4.9 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Thunderbolt</h3>
+                    <p>Experience the ultimate adrenaline rush on our signature roller coaster.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 2-4 riders</span>
+                        <span><i class="fas fa-clock"></i> 2 min</span>
+                    </div>
+                    <a href="./zones.html#thunderbolt" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/water-riddes.png" alt="Splash Mountain">
+                    <div class="card-overlay">
+                        <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Splash Mountain</h3>
+                    <p>Cool off with this thrilling water ride featuring multiple drops and splashes.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 4-6 riders</span>
+                        <span><i class="fas fa-clock"></i> 3 min</span>
+                    </div>
+                    <a href="./zones.html#water" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/haunted-house.png" alt="Haunted Mansion">
+                    <div class="card-overlay">
+                        <span class="rating">4.7 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Haunted Mansion</h3>
+                    <p>Enter if you dare! A spooky adventure through our haunted attraction.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 2-4 riders</span>
+                        <span><i class="fas fa-clock"></i> 5 min</span>
+                    </div>
+                    <a href="./zones.html#haunted" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/sky-wheel.png" alt="Sky Wheel">
+                    <div class="card-overlay">
+                        <span class="rating">4.6 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Sky Wheel</h3>
+                    <p>Take in breathtaking views of the park from our giant Ferris wheel.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 2-4 riders</span>
+                        <span><i class="fas fa-clock"></i> 8 min</span>
+                    </div>
+                    <a href="./zones.html#skywheel" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/bumber-cars.png" alt="Bumper Arena">
+                    <div class="card-overlay">
+                        <span class="rating">4.5 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Bumper Arena</h3>
+                    <p>Crash and bump your way through this classic amusement park favorite.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 1-2 riders</span>
+                        <span><i class="fas fa-clock"></i> 3 min</span>
+                    </div>
+                    <a href="./zones.html#bumper" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/merry-go-round.png" alt="Carousel Kingdom">
+                    <div class="card-overlay">
+                        <span class="rating">4.4 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Carousel Kingdom</h3>
+                    <p>A magical merry-go-round perfect for the whole family.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 1 rider</span>
+                        <span><i class="fas fa-clock"></i> 2 min</span>
+                    </div>
+                    <a href="zones.html#carousel" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/drop-tower.png" alt="Free Fall">
+                    <div class="card-overlay">
+                        <span class="rating">4.8 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Free Fall</h3>
+                    <p>Experience the thrill of a 200-foot drop tower ride.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 1-2 riders</span>
+                        <span><i class="fas fa-clock"></i> 1 min</span>
+                    </div>
+                    <a href="./zones.html#freefall" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/pirate-ship.png" alt="Pirate's Revenge">
+                    <div class="card-overlay">
+                        <span class="rating">4.6 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Pirate's Revenge</h3>
+                    <p>Swing back and forth on this thrilling pirate ship ride.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 20 riders</span>
+                        <span><i class="fas fa-clock"></i> 2 min</span>
+                    </div>
+                    <a href="./zones.html#pirate" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="attraction-card">
+                <div class="card-image">
+                    <img src="./images/kids-adventure-zone.png" alt="Kids Adventure Zone">
+                    <div class="card-overlay">
+                        <span class="rating">4.9 <i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Kids Adventure Zone</h3>
+                    <p>A special area designed for our youngest visitors with safe and fun attractions.</p>
+                    <div class="card-meta">
+                        <span><i class="fas fa-users"></i> 1-2 riders</span>
+                        <span><i class="fas fa-clock"></i> 10 min</span>
+                    </div>
+                    <a href="./zones.html#kids" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events-section">
+        <div class="section-header">
+            <h2>Upcoming Events</h2>
+            <p>Don't miss out on our special events and shows</p>
+        </div>
+        <div class="events-timeline">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/summer-music-festival.png" alt="Summer Music Festival">
+                </div>
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">JUN</span>
+                </div>
+                <div class="event-content">
+                    <h3>Summer Music Festival</h3>
+                    <p>Join us for a day of live music, food, and fun!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 12:00 PM - 10:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Main Stage</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/kids-adventure-day.png" alt="Kids' Adventure Day">
+                </div>
+                <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">JUN</span>
+                </div>
+                <div class="event-content">
+                    <h3>Kids' Adventure Day</h3>
+                    <p>Special activities and shows for our youngest visitors.</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 10:00 AM - 6:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Kids Zone</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/fireworks.png" alt="Fireworks Spectacular">
+                </div>
+                <div class="event-date">
+                    <span class="day">30</span>
+                    <span class="month">JUN</span>
+                </div>
+                <div class="event-content">
+                    <h3>Fireworks Spectacular</h3>
+                    <p>End the month with a bang! Amazing fireworks display.</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 9:00 PM - 10:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Central Plaza</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/hallowen.png" alt="Halloween Spooktacular">
+                </div>
+                <div class="event-date">
+                    <span class="day">31</span>
+                    <span class="month">OCT</span>
+                </div>
+                <div class="event-content">
+                    <h3>Halloween Spooktacular</h3>
+                    <p>Join us for a night of spooky fun and treats!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 6:00 PM - 11:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Haunted Zone</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/Christmas-Wonderland.png" alt="Christmas Wonderland">
+                </div>
+                <div class="event-date">
+                    <span class="day">25</span>
+                    <span class="month">DEC</span>
+                </div>
+                <div class="event-content">
+                    <h3>Christmas Wonderland</h3>
+                    <p>Experience the magic of Christmas with special shows and decorations.</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Main Plaza</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/New-Year_s-Eve-Celebration.png" alt="New Year's Eve Celebration">
+                </div>
+                <div class="event-date">
+                    <span class="day">31</span>
+                    <span class="month">DEC</span>
+                </div>
+                <div class="event-content">
+                    <h3>New Year's Eve Celebration</h3>
+                    <p>Ring in the new year with spectacular shows and fireworks!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 8:00 PM - 1:00 AM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Central Plaza</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/Spring-Festival.png" alt="Spring Festival">
+                </div>
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">MAR</span>
+                </div>
+                <div class="event-content">
+                    <h3>Spring Festival</h3>
+                    <p>Celebrate the arrival of spring with special shows and activities.</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 10:00 AM - 8:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Garden Plaza</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/Easter-Egg-Hunt.png" alt="Easter Egg Hunt">
+                </div>
+                <div class="event-date">
+                    <span class="day">1</span>
+                    <span class="month">APR</span>
+                </div>
+                <div class="event-content">
+                    <h3>Easter Egg Hunt</h3>
+                    <p>Join us for a fun-filled Easter egg hunt and activities!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Kids Zone</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="./images/Independence-Day-Celebration.png" alt="Independence Day Celebration">
+                </div>
+                <div class="event-date">
+                    <span class="day">4</span>
+                    <span class="month">JUL</span>
+                </div>
+                <div class="event-content">
+                    <h3>Independence Day Celebration</h3>
+                    <p>Celebrate with special shows, parades, and fireworks!</p>
+                    <div class="event-meta">
+                        <span><i class="fas fa-clock"></i> 12:00 PM - 10:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Main Plaza</span>
+                    </div>
+                    <a href="./tickets.html" class="btn-primary">Book Tickets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>Visitor Testimonials</h2>
+            <p>What our visitors say about their experience</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Sarah-Johnson.png" alt="Sarah Johnson">
+                    <div class="user-info">
+                        <h4>Sarah Johnson</h4>
+                        <span>Family Visit</span>
+                    </div>
+                </div>
+                <p>"Amazing experience! The kids had a blast and the staff was incredibly friendly. We'll definitely be
+                    back!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Michael-Chen.png" alt="Michael Chen">
+                    <div class="user-info">
+                        <h4>Michael Chen</h4>
+                        <span>Thrill Seeker</span>
+                    </div>
+                </div>
+                <p>"The roller coasters are absolutely incredible! The Thunderbolt is my favorite - pure adrenaline!"
+                </p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Emily-Rodriguez.png" alt="Emily Rodriguez">
+                    <div class="user-info">
+                        <h4>Emily Rodriguez</h4>
+                        <span>First Time Visitor</span>
+                    </div>
+                </div>
+                <p>"Such a beautiful park! The food was great, the rides were amazing, and the staff made us feel
+                    welcome."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/David-Wilson.png" alt="David Wilson">
+                    <div class="user-info">
+                        <h4>David Wilson</h4>
+                        <span>Annual Pass Holder</span>
+                    </div>
+                </div>
+                <p>"As an annual pass holder, I can confidently say this is the best amusement park in the region. The
+                    variety of attractions keeps me coming back!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Lisa-Thompson.png" alt="Lisa Thompson">
+                    <div class="user-info">
+                        <h4>Lisa Thompson</h4>
+                        <span>Family Visit</span>
+                    </div>
+                </div>
+                <p>"The kids' zone is fantastic! My children had so much fun, and I felt completely safe letting them
+                    play. The staff is attentive and caring."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/James-Anderson.png" alt="James Anderson">
+                    <div class="user-info">
+                        <h4>James Anderson</h4>
+                        <span>Event Attendee</span>
+                    </div>
+                </div>
+                <p>"Attended the Summer Music Festival and it was incredible! Great lineup, amazing atmosphere, and the
+                    park handled the crowd perfectly."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Maria-Garcia.png" alt="Maria Garcia">
+                    <div class="user-info">
+                        <h4>Maria Garcia</h4>
+                        <span>Group Visit</span>
+                    </div>
+                </div>
+                <p>"Perfect for group outings! We celebrated my daughter's birthday here, and the staff went above and
+                    beyond to make it special."</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Robert-Lee.png" alt="Robert Lee">
+                    <div class="user-info">
+                        <h4>Robert Lee</h4>
+                        <span>Food Enthusiast</span>
+                    </div>
+                </div>
+                <p>"The food options are outstanding! From quick snacks to full meals, everything is delicious and
+                    reasonably priced. The themed restaurants are a great touch!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="./images/humans/Sophia-Martinez.png" alt="Sophia Martinez">
+                    <div class="user-info">
+                        <h4>Sophia Martinez</h4>
+                        <span>Seasonal Visitor</span>
+                    </div>
+                </div>
+                <p>"The seasonal events are always spectacular! The Halloween and Christmas decorations transform the
+                    park into a magical place. Can't wait for the next event!"</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <li><a href="./sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@merciado.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Park Avenue, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="./https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="./https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="./https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="./https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Merciado Amusement Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Merciado Amusement Park</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="sky-wheel">
+                    <img src="./images/logo/logo2.png" alt="Sky Wheel" class="wheel-img">
+                </div>
+            
+                <!-- Center Title -->
+                <div class="mx-auto gradient-text">
+                    MERCIADO AMUSEMENT PARK
+                </div>
+            </div>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./zones.html">Zones & Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./tickets.html">Tickets & Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <a href="./login.html" class="btn-login">Login</a>
+                        <a href="./register.html" class="btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <h1>Our Gallery</h1>
+            <p>Explore the magic through our collection of photos</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Photos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Attractions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gallery Section -->
+    <section class="featured-gallery">
+        <div class="section-header">
+            <h2>Featured Collections</h2>
+            <p>Discover our most popular photo collections</p>
+        </div>
+        <div class="featured-container">
+            <div class="featured-item">
+                <img src="./images/gallery.images/summer-fun.png" alt="Summer Fun">
+                <div class="featured-overlay">
+                    <h3>Summer Fun</h3>
+                    <p>Best moments from our summer season</p>
+                    <a href="#" class="view-more">View Collection</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="./images/gallery.images/night-magic.png" alt="Night Magic">
+                <div class="featured-overlay">
+                    <h3>Night Magic</h3>
+                    <p>Experience the park after dark</p>
+                    <a href="#" class="view-more">View Collection</a>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="./images/family-fun-zone.png" alt="Family Moments">
+                <div class="featured-overlay">
+                    <h3>Family Moments</h3>
+                    <p>Creating memories together</p>
+                    <a href="#" class="view-more">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="gallery-container">
+            <!-- Attractions -->
+            <div class="gallery-item" data-category="attractions">
+                <img src="./images/roller-coaster.png" alt="Roller Coaster">
+                <div class="gallery-overlay">
+                    <h3>Thrill Zone</h3>
+                    <p>Experience the excitement</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-users"></i> 4 riders</span>
+                        <span><i class="fas fa-clock"></i> 2 min</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="attractions">
+                <img src="./images/water-riddes.png" alt="Water Ride">
+                <div class="gallery-overlay">
+                    <h3>Water Zone</h3>
+                    <p>Splash into fun</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-users"></i> 6 riders</span>
+                        <span><i class="fas fa-clock"></i> 3 min</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="attractions">
+                <img src="./images/sky-wheel.png" alt="Ferris Wheel">
+                <div class="gallery-overlay">
+                    <h3>Sky View</h3>
+                    <p>See the park from above</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-users"></i> 4 riders</span>
+                        <span><i class="fas fa-clock"></i> 5 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shows -->
+            <div class="gallery-item" data-category="shows">
+                <img src="./images/circus.png" alt="Circus Show">
+                <div class="gallery-overlay">
+                    <h3>Circus Spectacular</h3>
+                    <p>Amazing performances</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-clock"></i> 45 min</span>
+                        <span><i class="fas fa-star"></i> 4.8/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="shows">
+                <img src="./images/entertainment.images/Magic-Festival.png
+                
+                " alt="Magic Show">
+                <div class="gallery-overlay">
+                    <h3>Magic Kingdom</h3>
+                    <p>Mind-blowing illusions</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-star"></i> 4.9/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="shows">
+                <img src="./images/entertainment.images/Dance-Showdown.png" alt="Dance Show">
+                <div class="gallery-overlay">
+                    <h3>Dance Extravaganza</h3>
+                    <p>Energetic performances</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-clock"></i> 40 min</span>
+                        <span><i class="fas fa-star"></i> 4.7/5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurants -->
+            <div class="gallery-item" data-category="restaurants">
+                <img src="./images/returant.images/theme-dining-table.png" alt="Fine Dining">
+                <div class="gallery-overlay">
+                    <h3>Fine Dining</h3>
+                    <p>Gourmet experience</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-utensils"></i> $$$</span>
+                        <span><i class="fas fa-star"></i> 4.9/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="restaurants">
+                <img src="./images/returant.images/family-dining.png" alt="Family Restaurant">
+                <div class="gallery-overlay">
+                    <h3>Family Restaurant</h3>
+                    <p>Delicious meals</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-utensils"></i> $$</span>
+                        <span><i class="fas fa-star"></i> 4.7/5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="restaurants">
+                <img src="./images/returant.images/cafe.png" alt="Cafe">
+                <div class="gallery-overlay">
+                    <h3>Park Cafe</h3>
+                    <p>Quick bites & drinks</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-utensils"></i> $</span>
+                        <span><i class="fas fa-star"></i> 4.5/5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="gallery-item" data-category="events">
+                <img src="./images/fireworks.png" alt="Fireworks">
+                <div class="gallery-overlay">
+                    <h3>Fireworks Night</h3>
+                    <p>Spectacular display</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-calendar"></i> Weekly</span>
+                        <span><i class="fas fa-clock"></i> 9 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="./images/entertainment.images/Character-Parade.png" alt="Parade">
+                <div class="gallery-overlay">
+                    <h3>Character Parade</h3>
+                    <p>Meet your favorites</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-calendar"></i> Daily</span>
+                        <span><i class="fas fa-clock"></i> 3 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="./images/entertainment.images/concert.png" alt="Concert">
+                <div class="gallery-overlay">
+                    <h3>Live Concert</h3>
+                    <p>Music under the stars</p>
+                    <div class="gallery-meta">
+                        <span><i class="fas fa-calendar"></i> Monthly</span>
+                        <span><i class="fas fa-clock"></i> 7 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev">&lt;</span>
+        <span class="lightbox-next">&gt;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <li><a href="./sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@merciado.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Park Avenue, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Merciado Amusement Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

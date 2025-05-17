@@ -1,0 +1,212 @@
+/* Disclaimer Section */
+.disclaimer-section {
+    padding: 6rem 2rem;
+    background: #f8f9fa;
+    min-height: calc(100vh - 80px);
+}
+
+.disclaimer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.disclaimer-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.disclaimer-header h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.disclaimer-header p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.disclaimer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.disclaimer-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: slideUp 0.5s ease;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.disclaimer-card:nth-child(1) { animation-delay: 0.1s; }
+.disclaimer-card:nth-child(2) { animation-delay: 0.2s; }
+.disclaimer-card:nth-child(3) { animation-delay: 0.3s; }
+.disclaimer-card:nth-child(4) { animation-delay: 0.4s; }
+.disclaimer-card:nth-child(5) { animation-delay: 0.5s; }
+.disclaimer-card:nth-child(6) { animation-delay: 0.6s; }
+
+.disclaimer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.disclaimer-card:hover .card-icon {
+    transform: rotate(360deg);
+}
+
+.disclaimer-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.disclaimer-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.disclaimer-footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    animation: fadeIn 0.5s ease 0.7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.disclaimer-footer p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .disclaimer-section {
+        padding: 4rem 1.5rem;
+    }
+    
+    .disclaimer-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .disclaimer-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .disclaimer-section {
+        padding: 3rem 1rem;
+    }
+    
+    .disclaimer-header h1 {
+        font-size: 2rem;
+    }
+    
+    .disclaimer-header p {
+        font-size: 1rem;
+    }
+    
+    .disclaimer-card {
+        padding: 1.5rem;
+    }
+    
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .disclaimer-card h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .disclaimer-section {
+        padding: 2rem 1rem;
+    }
+    
+    .disclaimer-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .disclaimer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .disclaimer-card {
+        padding: 1.2rem;
+    }
+    
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .disclaimer-card h2 {
+        font-size: 1.2rem;
+    }
+    
+    .btn-contact {
+        padding: 0.8rem 1.5rem;
+    }
+} 

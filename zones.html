@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zones & Attractions - Merciado Amusement Park</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/zones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="sky-wheel">
+                    <img src="./images/logo/logo2.png" alt="Sky Wheel" class="wheel-img">
+                </div>
+            
+                <!-- Center Title -->
+                <div class="mx-auto gradient-text">
+                    MERCIADO AMUSEMENT PARK
+                </div>
+            </div>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./zones.html">Zones & Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./tickets.html">Tickets & Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <a href="./login.html" class="btn-login">Login</a>
+                        <a href="./register.html" class="btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Zones Hero Section -->
+    <section class="zones-hero">
+        <div class="zones-hero-content">
+            <h1>Explore Our Zones</h1>
+            <p>Discover the magic in every corner of our park</p>
+        </div>
+    </section>
+
+    <!-- Zones Grid Section -->
+    <section class="zones-grid">
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/roller-coaster.png" alt="Thrill Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Thrill Zone</h3>
+                <p>Experience heart-pounding excitement with our extreme roller coasters and adrenaline-pumping rides.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-arrow-up"></i> Extreme Roller Coaster</li>
+                    <li><i class="fas fa-sync"></i> Spinning Tower</li>
+                    <li><i class="fas fa-wind"></i> Free Fall Drop</li>
+                </ul>
+                <a href="./tickets.html" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/family-fun-zone.png" alt="Family Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Family Zone</h3>
+                <p>Perfect for families with kids of all ages, featuring gentle rides and interactive attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-horse"></i> Carousel</li>
+                    <li><i class="fas fa-train"></i> Mini Train</li>
+                    <li><i class="fas fa-water"></i> Water Play Area</li>
+                </ul>
+                <a href="./tickets.html#family-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/adventure -zone.png" alt="Adventure Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Adventure Zone</h3>
+                <p>Embark on exciting adventures with themed rides and interactive experiences.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-dragon"></i> Dragon's Lair</li>
+                    <li><i class="fas fa-ship"></i> Pirate Ship</li>
+                    <li><i class="fas fa-mountain"></i> Mountain Expedition</li>
+                </ul>
+                <a href="./tickets.html#adventure-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/water-riddes.png" alt="Water Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Water Zone</h3>
+                <p>Cool off and have fun with our water-based attractions and slides.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-swimming-pool"></i> Wave Pool</li>
+                    <li><i class="fas fa-water"></i> Water Slides</li>
+                    <li><i class="fas fa-umbrella-beach"></i> Lazy River</li>
+                </ul>
+                <a href="./tickets.html#water-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/fantasy-zone.png" alt="Fantasy Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Fantasy Zone</h3>
+                <p>Step into a world of magic and wonder with enchanting rides and shows.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-magic"></i> Magic Castle</li>
+                    <li><i class="fas fa-dragon"></i> Dragon Ride</li>
+                    <li><i class="fas fa-theater-masks"></i> Fantasy Show</li>
+                </ul>
+                <a href="./tickets.html#fantasy-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/Sci-fi-zine.png" alt="Sci-Fi Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Sci-Fi Zone</h3>
+                <p>Experience futuristic rides and space-themed attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-rocket"></i> Space Coaster</li>
+                    <li><i class="fas fa-robot"></i> Robot Arena</li>
+                    <li><i class="fas fa-vr-cardboard"></i> VR Experience</li>
+                </ul>
+                <a href="./tickets.html#sci-fi-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/Dinosaur-Adventure.png" alt="Wild West Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Wild West Zone</h3>
+                <p>Step back in time to the wild west with themed rides and shows.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-horse"></i> Stagecoach Ride</li>
+                    <li><i class="fas fa-gun"></i> Shooting Gallery</li>
+                    <li><i class="fas fa-campground"></i> Gold Mine Adventure</li>
+                </ul>
+                <a href="./tickets.html#wild-west-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/dinousor.png" alt="Jungle Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Jungle Zone</h3>
+                <p>Explore the wild with jungle-themed rides and animal encounters.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-tree"></i> Jungle Safari</li>
+                    <li><i class="fas fa-water"></i> River Rapids</li>
+                    <li><i class="fas fa-paw"></i> Animal Show</li>
+                </ul>
+                <a href="./tickets.html#jungle-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/Medieval-Zone.png" alt="Medieval Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Medieval Zone</h3>
+                <p>Travel back to the age of knights and castles with themed attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-chess-rook"></i> Castle Tour</li>
+                    <li><i class="fas fa-horse"></i> Jousting Show</li>
+                    <li><i class="fas fa-dragon"></i> Dragon's Challenge</li>
+                </ul>
+                <a href="./tickets.html#medieval-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/underwater-zone.png" alt="Underwater Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Underwater Zone</h3>
+                <p>Dive into an underwater world with marine-themed attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-fish"></i> Aquarium Adventure</li>
+                    <li><i class="fas fa-water"></i> Submarine Ride</li>
+                    <li><i class="fas fa-mermaid"></i> Mermaid Show</li>
+                </ul>
+                <a href="./tickets.html#underwater-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/circus.png" alt="Circus Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Circus Zone</h3>
+                <p>Experience the magic of the circus with amazing shows and rides.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-clown"></i> Circus Show</li>
+                    <li><i class="fas fa-horse"></i> Carousel</li>
+                    <li><i class="fas fa-magic"></i> Magic Show</li>
+                </ul>
+                <a href="./tickets.html#circus-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/sports-zone.png" alt="Sports Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Sports Zone</h3>
+                <p>Get active with sports-themed attractions and activities.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-basketball-ball"></i> Sports Arena</li>
+                    <li><i class="fas fa-running"></i> Obstacle Course</li>
+                    <li><i class="fas fa-trophy"></i> Sports Challenge</li>
+                </ul>
+                <a href="./tickets.html#sports-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/summer-music-festival.png" alt="Music Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Music Zone</h3>
+                <p>Rock out with music-themed rides and live performances.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-music"></i> Concert Hall</li>
+                    <li><i class="fas fa-guitar"></i> Rock 'n' Roll Ride</li>
+                    <li><i class="fas fa-drum"></i> Drum Circle</li>
+                </ul>
+                <a href="./tickets.html#music-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/haunted-house.png" alt="Horror Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Horror Zone</h3>
+                <p>Face your fears with spooky rides and haunted attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-ghost"></i> Haunted House</li>
+                    <li><i class="fas fa-skull"></i> Horror Maze</li>
+                    <li><i class="fas fa-moon"></i> Night Terror Ride</li>
+                </ul>
+                <a href="./tickets.html#horror-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/future-zone.png" alt="Future Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Future Zone</h3>
+                <p>Experience the world of tomorrow with futuristic attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-robot"></i> Robot World</li>
+                    <li><i class="fas fa-space-shuttle"></i> Space Station</li>
+                    <li><i class="fas fa-atom"></i> Future Tech Show</li>
+                </ul>
+                <a href="./tickets.html#future-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/Arctic-zone.png" alt="Arctic Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Arctic Zone</h3>
+                <p>Experience the wonders of the polar regions with ice-themed attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-snowflake"></i> Ice Palace</li>
+                    <li><i class="fas fa-igloo"></i> Polar Expedition</li>
+                    <li><i class="fas fa-penguin"></i> Penguin Parade</li>
+                </ul>
+                <a href="./tickets.html#arctic-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/egyption-zone.png" alt="Egyptian Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Egyptian Zone</h3>
+                <p>Discover the mysteries of ancient Egypt with themed rides and exhibits.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-mountain"></i> Pyramid Adventure</li>
+                    <li><i class="fas fa-scroll"></i> Mummy's Tomb</li>
+                    <li><i class="fas fa-sun"></i> Sun God's Temple</li>
+                </ul>
+                <a href="./tickets.html#egyptian-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/rainforest-zone.png" alt="Rainforest Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Rainforest Zone</h3>
+                <p>Explore the lush rainforest with exotic plants and wildlife encounters.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-tree"></i> Canopy Walk</li>
+                    <li><i class="fas fa-frog"></i> Amphibian House</li>
+                    <li><i class="fas fa-water"></i> Waterfall Rapids</li>
+                </ul>
+                <a href="./tickets.html#rainforest-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/space-zone.png" alt="Space Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Space Zone</h3>
+                <p>Journey through the cosmos with space-themed rides and experiences.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-rocket"></i> Space Shuttle</li>
+                    <li><i class="fas fa-moon"></i> Lunar Base</li>
+                    <li><i class="fas fa-satellite"></i> Satellite Tour</li>
+                </ul>
+                <a href="./tickets.html#space-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+
+        <div class="zone-card">
+            <div class="zone-image">
+                <img src="./images/zone.images/volcano-zone.png" alt="Volcano Zone">
+            </div>
+            <div class="zone-content">
+                <h3>Volcano Zone</h3>
+                <p>Experience the power of nature with volcano-themed attractions.</p>
+                <ul class="zone-features">
+                    <li><i class="fas fa-fire"></i> Lava Flow</li>
+                    <li><i class="fas fa-mountain"></i> Eruption Ride</li>
+                    <li><i class="fas fa-gem"></i> Crystal Cavern</li>
+                </ul>
+                <a href="./tickets.html#volcano-zone" class="btn-primary">Purchase Tickets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="park-map">
+        <div class="map-container">
+            <h2>Park Map</h2>
+            <div class="map-image">
+                <img src="./images/zone.images/map.png" alt="Park Map">
+            </div>
+            <div class="map-legend">
+                <h3>Legend</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: #ff6b6b;"></i> Thrill Zone</li>
+                    <li><i class="fas fa-map-marker-alt" style="color: #4CAF50;"></i> Family Zone</li>
+                    <li><i class="fas fa-map-marker-alt" style="color: #2196F3;"></i> Adventure Zone</li>
+                    <li><i class="fas fa-map-marker-alt" style="color: #9C27B0;"></i> Water Zone</li>
+                    <li><i class="fas fa-utensils"></i> Restaurants</li>
+                    <li><i class="fas fa-restroom"></i> Restrooms</li>
+                    <li><i class="fas fa-first-aid"></i> First Aid</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <li><a href="./sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@merciado.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Park Avenue, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Merciado Amusement Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

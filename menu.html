@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Merciado Amusement Park</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="sky-wheel">
+                    <img src="./images/logo/logo2.png" alt="Sky Wheel" class="wheel-img">
+                </div>
+            
+                <!-- Center Title -->
+                <div class="mx-auto gradient-text">
+                    MERCIADO AMUSEMENT PARK
+                </div>
+            </div>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./zones.html">Zones & Attractions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./entertainment.html">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./tickets.html">Tickets & Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./sitemap.html">Sitemap</a>
+                        </li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <a href="./login.html" class="btn-login">Login</a>
+                        <a href="./register.html" class="btn-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1>Our Menu</h1>
+            <p>Explore our diverse selection of dishes and beverages</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="category-nav">
+            <a href="#appetizers" class="category-link">Appetizers</a>
+            <a href="#main-courses" class="category-link">Main Courses</a>
+            <a href="#seafood" class="category-link">Seafood</a>
+            <a href="#salads" class="category-link">Salads</a>
+            <a href="#vegetarian" class="category-link">Vegetarian</a>
+            <a href="#desserts" class="category-link">Desserts</a>
+            <a href="#beverages" class="category-link">Beverages</a>
+        </div>
+    </section>
+
+    <!-- Menu Grid Section -->
+    <section class="menu-grid">
+        <!-- Appetizers Section -->
+        <h2 id="appetizers" class="section-title">Appetizers</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu.images/Bruschetta.png" alt="Bruschetta">
+                </div>
+                <div class="menu-content">
+                    <h3>Bruschetta</h3>
+                    <p>Toasted bread topped with fresh tomatoes, garlic, and basil</p>
+                    <div class="menu-price">$8.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Italian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/spring-rolls.png" alt="Spring Rolls">
+                </div>
+                <div class="menu-content">
+                    <h3>Spring Rolls</h3>
+                    <p>Crispy vegetable spring rolls with sweet chili sauce</p>
+                    <div class="menu-price">$7.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Asian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/calamari.png" alt="Calamari">
+                </div>
+                <div class="menu-content">
+                    <h3>Calamari</h3>
+                    <p>Crispy fried squid served with marinara sauce</p>
+                    <div class="menu-price">$12.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Seafood</span>
+                        <span class="tag">Mediterranean</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/cheese-plate.png" alt="Cheese Plate">
+                </div>
+                <div class="menu-content">
+                    <h3>Cheese Plate</h3>
+                    <p>Selection of artisanal cheeses with fruit and nuts</p>
+                    <div class="menu-price">$14.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/garlic-shrimp.png" alt="Garlic Shrimp">
+                </div>
+                <div class="menu-content">
+                    <h3>Garlic Shrimp</h3>
+                    <p>Succulent shrimp sautéed in garlic butter</p>
+                    <div class="menu-price">$15.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Seafood</span>
+                        <span class="tag">Spicy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/stuffed-mushrooms.png" alt="Stuffed Mushrooms">
+                </div>
+                <div class="menu-content">
+                    <h3>Stuffed Mushrooms</h3>
+                    <p>Mushroom caps filled with herbed cream cheese</p>
+                    <div class="menu-price">$9.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Baked</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/chicken-wings.png" alt="Chicken Wings">
+                </div>
+                <div class="menu-content">
+                    <h3>Chicken Wings</h3>
+                    <p>Crispy wings with choice of sauce</p>
+                    <div class="menu-price">$11.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Spicy</span>
+                        <span class="tag">Classic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/quesadilla.png" alt="Quesadilla">
+                </div>
+                <div class="menu-content">
+                    <h3>Quesadilla</h3>
+                    <p>Grilled tortilla with cheese and vegetables</p>
+                    <div class="menu-price">$10.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Mexican</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses Section -->
+        <h2 id="main-courses" class="section-title">Main Courses</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/grilled-salmon.png" alt="Grilled Salmon">
+                </div>
+                <div class="menu-content">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh Atlantic salmon with lemon butter sauce</p>
+                    <div class="menu-price">$24.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Seafood</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/beef-tenderloin.png" alt="Beef Tenderloin">
+                </div>
+                <div class="menu-content">
+                    <h3>Beef Tenderloin</h3>
+                    <p>Premium beef tenderloin with red wine reduction</p>
+                    <div class="menu-price">$32.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Steak</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/chicken-parmesan.png" alt="Chicken Parmesan">
+                </div>
+                <div class="menu-content">
+                    <h3>Chicken Parmesan</h3>
+                    <p>Breaded chicken with marinara and mozzarella</p>
+                    <div class="menu-price">$18.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Classic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-lasagna.png" alt="Vegetable Lasagna">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Lasagna</h3>
+                    <p>Layers of pasta with seasonal vegetables and cheese</p>
+                    <div class="menu-price">$16.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Italian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/ribeye-steak.png" alt="Ribeye Steak">
+                </div>
+                <div class="menu-content">
+                    <h3>Ribeye Steak</h3>
+                    <p>Premium ribeye with garlic butter and herbs</p>
+                    <div class="menu-price">$34.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Steak</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/grilled-chicken.png" alt="Grilled Chicken">
+                </div>
+                <div class="menu-content">
+                    <h3>Grilled Chicken</h3>
+                    <p>Herb-marinated chicken breast with vegetables</p>
+                    <div class="menu-price">$17.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Healthy</span>
+                        <span class="tag">Grilled</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/eggplant-parmesan.png" alt="Eggplant Parmesan">
+                </div>
+                <div class="menu-content">
+                    <h3>Eggplant Parmesan</h3>
+                    <p>Breaded eggplant with marinara and cheese</p>
+                    <div class="menu-price">$15.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Italian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/beef-burger.png" alt="Beef Burger">
+                </div>
+                <div class="menu-content">
+                    <h3>Beef Burger</h3>
+                    <p>Premium beef patty with cheese and vegetables</p>
+                    <div class="menu-price">$14.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Classic</span>
+                        <span class="tag">American</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seafood Section -->
+        <h2 id="seafood" class="section-title">Seafood</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/lobster-thermidor.png" alt="Lobster Thermidor">
+                </div>
+                <div class="menu-content">
+                    <h3>Lobster Thermidor</h3>
+                    <p>Classic French lobster dish with creamy sauce</p>
+                    <div class="menu-price">$45.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Premium</span>
+                        <span class="tag">French</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/grilled-shrimp.png" alt="Grilled Shrimp">
+                </div>
+                <div class="menu-content">
+                    <h3>Grilled Shrimp</h3>
+                    <p>Jumbo shrimp with garlic butter and herbs</p>
+                    <div class="menu-price">$22.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Seafood</span>
+                        <span class="tag">Grilled</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/seafood-pasta.png" alt="Seafood Pasta">
+                </div>
+                <div class="menu-content">
+                    <h3>Seafood Pasta</h3>
+                    <p>Mixed seafood with linguine in white wine sauce</p>
+                    <div class="menu-price">$26.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/grilled-octopus.png" alt="Grilled Octopus">
+                </div>
+                <div class="menu-content">
+                    <h3>Grilled Octopus</h3>
+                    <p>Tender octopus with olive oil and herbs</p>
+                    <div class="menu-price">$24.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Mediterranean</span>
+                        <span class="tag">Grilled</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/fish-tacos.png" alt="Fish Tacos">
+                </div>
+                <div class="menu-content">
+                    <h3>Fish Tacos</h3>
+                    <p>Grilled fish with fresh salsa and avocado</p>
+                    <div class="menu-price">$18.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Mexican</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/seafood-risotto.png" alt="Seafood Risotto">
+                </div>
+                <div class="menu-content">
+                    <h3>Seafood Risotto</h3>
+                    <p>Creamy risotto with mixed seafood</p>
+                    <div class="menu-price">$28.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/grilled-tuna.png" alt="Grilled Tuna">
+                </div>
+                <div class="menu-content">
+                    <h3>Grilled Tuna</h3>
+                    <p>Fresh tuna steak with wasabi sauce</p>
+                    <div class="menu-price">$29.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Asian</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/seafood-platter.png" alt="Seafood Platter">
+                </div>
+                <div class="menu-content">
+                    <h3>Seafood Platter</h3>
+                    <p>Assorted seafood with dipping sauces</p>
+                    <div class="menu-price">$39.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Premium</span>
+                        <span class="tag">Sharing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salads Section -->
+        <h2 id="salads" class="section-title">Salads</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/caesar-salad.png" alt="Caesar Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Caesar Salad</h3>
+                    <p>Classic Caesar with romaine, parmesan, and croutons</p>
+                    <div class="menu-price">$12.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Classic</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/greek-salad.png" alt="Greek Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Greek Salad</h3>
+                    <p>Fresh vegetables with feta cheese and olives</p>
+                    <div class="menu-price">$11.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Mediterranean</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/cobb-salad.png" alt="Cobb Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Cobb Salad</h3>
+                    <p>Mixed greens with chicken, bacon, and blue cheese</p>
+                    <div class="menu-price">$14.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Classic</span>
+                        <span class="tag">American</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/quinoa-salad.png" alt="Quinoa Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Quinoa Salad</h3>
+                    <p>Quinoa with roasted vegetables and herbs</p>
+                    <div class="menu-price">$13.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/spinach-salad.png" alt="Spinach Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Spinach Salad</h3>
+                    <p>Fresh spinach with strawberries and nuts</p>
+                    <div class="menu-price">$12.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/mediterranean-salad.png" alt="Mediterranean Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Mediterranean Salad</h3>
+                    <p>Mixed greens with olives, feta, and olive oil</p>
+                    <div class="menu-price">$13.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Mediterranean</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/asian-salad.png" alt="Asian Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Asian Salad</h3>
+                    <p>Mixed greens with sesame dressing</p>
+                    <div class="menu-price">$12.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Asian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/avocado-salad.png" alt="Avocado Salad">
+                </div>
+                <div class="menu-content">
+                    <h3>Avocado Salad</h3>
+                    <p>Mixed greens with avocado and citrus dressing</p>
+                    <div class="menu-price">$13.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegetarian Section -->
+        <h2 id="vegetarian" class="section-title">Vegetarian</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-curry.png" alt="Vegetable Curry">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Curry</h3>
+                    <p>Mixed vegetables in aromatic curry sauce</p>
+                    <div class="menu-price">$15.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Indian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/portobello-mushroom.png" alt="Portobello Mushroom">
+                </div>
+                <div class="menu-content">
+                    <h3>Portobello Mushroom</h3>
+                    <p>Grilled portobello with balsamic glaze</p>
+                    <div class="menu-price">$14.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Grilled</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-stir-fry.png" alt="Vegetable Stir Fry">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Stir Fry</h3>
+                    <p>Mixed vegetables in soy-ginger sauce</p>
+                    <div class="menu-price">$13.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Asian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-pasta.png" alt="Vegetable Pasta">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Pasta</h3>
+                    <p>Pasta with seasonal vegetables in tomato sauce</p>
+                    <div class="menu-price">$14.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Italian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-burger.png" alt="Vegetable Burger">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Burger</h3>
+                    <p>House-made veggie patty with all the fixings</p>
+                    <div class="menu-price">$12.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegan</span>
+                        <span class="tag">American</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-pizza.png" alt="Vegetable Pizza">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Pizza</h3>
+                    <p>Thin crust pizza with seasonal vegetables</p>
+                    <div class="menu-price">$15.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Italian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-soup.png" alt="Vegetable Soup">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Soup</h3>
+                    <p>Seasonal vegetables in rich vegetable broth</p>
+                    <div class="menu-price">$9.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/vegetable-tacos.png" alt="Vegetable Tacos">
+                </div>
+                <div class="menu-content">
+                    <h3>Vegetable Tacos</h3>
+                    <p>Grilled vegetables with fresh salsa and guacamole</p>
+                    <div class="menu-price">$13.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Mexican</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <h2 id="desserts" class="section-title">Desserts</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/tiramisu.png" alt="Tiramisu">
+                </div>
+                <div class="menu-content">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian coffee-flavored dessert</p>
+                    <div class="menu-price">$8.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Coffee</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/chocolate-lava-cake.png" alt="Chocolate Lava Cake">
+                </div>
+                <div class="menu-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with molten center</p>
+                    <div class="menu-price">$9.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Chocolate</span>
+                        <span class="tag">Warm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/cheesecake.png" alt="Cheesecake">
+                </div>
+                <div class="menu-content">
+                    <h3>Cheesecake</h3>
+                    <p>Classic New York style cheesecake</p>
+                    <div class="menu-price">$8.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Classic</span>
+                        <span class="tag">Creamy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/crème-brûlée.png" alt="Crème Brûlée">
+                </div>
+                <div class="menu-content">
+                    <h3>Crème Brûlée</h3>
+                    <p>Classic French custard with caramelized sugar</p>
+                    <div class="menu-price">$9.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">French</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/apple-pie.png" alt="Apple Pie">
+                </div>
+                <div class="menu-content">
+                    <h3>Apple Pie</h3>
+                    <p>Classic apple pie with vanilla ice cream</p>
+                    <div class="menu-price">$7.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Classic</span>
+                        <span class="tag">American</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/ice-cream-sundae.png" alt="Ice Cream Sundae">
+                </div>
+                <div class="menu-content">
+                    <h3>Ice Cream Sundae</h3>
+                    <p>Three scoops with toppings and whipped cream</p>
+                    <div class="menu-price">$8.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Classic</span>
+                        <span class="tag">Cold</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/fruit-tart.png" alt="Fruit Tart">
+                </div>
+                <div class="menu-content">
+                    <h3>Fruit Tart</h3>
+                    <p>Seasonal fruits on vanilla custard</p>
+                    <div class="menu-price">$8.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Fresh</span>
+                        <span class="tag">Light</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/chocolate-mousse.png" alt="Chocolate Mousse">
+                </div>
+                <div class="menu-content">
+                    <h3>Chocolate Mousse</h3>
+                    <p>Rich chocolate mousse with whipped cream</p>
+                    <div class="menu-price">$7.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Chocolate</span>
+                        <span class="tag">Creamy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages Section -->
+        <h2 id="beverages" class="section-title">Beverages</h2>
+        <div class="menu-cards-container">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/signature-cocktail.png" alt="Signature Cocktail">
+                </div>
+                <div class="menu-content">
+                    <h3>Signature Cocktail</h3>
+                    <p>Our special blend of premium spirits</p>
+                    <div class="menu-price">$12.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Alcoholic</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/fresh-juice.png" alt="Fresh Juice">
+                </div>
+                <div class="menu-content">
+                    <h3>Fresh Juice</h3>
+                    <p>Seasonal fruits freshly squeezed</p>
+                    <div class="menu-price">$6.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Fresh</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/Functional-Juices.png" alt="Wine">
+                </div>
+                <div class="menu-content">
+                    <h3>Functional Juices</h3>
+                    <p>Selection of premium Functional Juices by the glass</p>
+                    <div class="menu-price">$9.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/iced-tea.png" alt="Iced Tea">
+                </div>
+                <div class="menu-content">
+                    <h3>Iced Tea</h3>
+                    <p>Freshly brewed iced tea with lemon</p>
+                    <div class="menu-price">$4.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Refreshing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/Fusion-Juices.png" alt="Beer">
+                </div>
+                <div class="menu-content">
+                    <h3>Fusion Juices</h3>
+                    <p>Selection of local Fusion Juices</p>
+                    <div class="menu-price">$7.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Local</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/Fruit-Smoothie.png" alt="Smoothie">
+                </div>
+                <div class="menu-content">
+                    <h3>Fruit Smoothie</h3>
+                    <p>Blended seasonal fruits with yogurt</p>
+                    <div class="menu-price">$6.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/Specialty-Coffee.png" alt="Coffee">
+                </div>
+                <div class="menu-content">
+                    <h3>Specialty Coffee</h3>
+                    <p>Premium coffee with choice of milk</p>
+                    <div class="menu-price">$5.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Hot</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="./images/menu./images/Signature-Mocktail.png" alt="Mocktail">
+                </div>
+                <div class="menu-content">
+                    <h3>Signature Mocktail</h3>
+                    <p>Premium non-alcoholic mixed drink</p>
+                    <div class="menu-price">$8.99</div>
+                    <div class="menu-tags">
+                        <span class="tag">Non-Alcoholic</span>
+                        <span class="tag">Premium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <li><a href="./sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@merciado.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Park Avenue, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Merciado Amusement Park. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

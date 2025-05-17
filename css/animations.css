@@ -1,0 +1,122 @@
+/* Button Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Button Base Styles */
+.btn-primary,
+.btn-secondary,
+.btn-login,
+.btn-register {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Carousel Styles */
+.carousel-video {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.carousel-video.active {
+    opacity: 1;
+}
+
+/* Dot Navigation */
+.dot {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    transform: scale(1.2);
+    background-color: #fff;
+}
+
+/* Carousel Controls */
+.carousel-prev,
+.carousel-next {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-secondary,
+.btn-login,
+.btn-register {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-login:hover,
+.btn-register:hover {
+    transform: translateY(-2px);
+}
+
+/* Button Active Effect */
+.btn-primary:active,
+.btn-secondary:active,
+.btn-login:active,
+.btn-register:active {
+    transform: translateY(1px);
+}
+
+/* Button Focus Effect */
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-login:focus,
+.btn-register:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+}
+
+/* Button Disabled State */
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-login:disabled,
+.btn-register:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+} 

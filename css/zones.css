@@ -1,0 +1,205 @@
+/* Zones Hero Section */
+.zones-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../images/zone.images/zone-background.png') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.zones-hero-content {
+    animation: fadeInUp 1s ease;
+}
+
+.zones-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.zones-hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Zones Grid Section */
+.zones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 5rem 5%;
+    background: #f9f9f9;
+}
+
+.zone-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zone-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.zone-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.zone-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.zone-card:hover .zone-image img {
+    transform: scale(1.1);
+}
+
+.zone-content {
+    padding: 1.5rem;
+}
+
+.zone-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.zone-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.zone-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.zone-features li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.zone-features i {
+    margin-right: 0.5rem;
+    color: #ff6b6b;
+}
+
+.zone-content .btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #ff6b6b;
+    margin-top: 1.5rem;
+}
+
+.zone-content .btn-primary:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+}
+
+/* Park Map Section */
+.park-map {
+    padding: 5rem 5%;
+    background: white;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.map-image {
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-legend {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-legend h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.map-legend ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.map-legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.map-legend i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .zones-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .zones-hero p {
+        font-size: 1.2rem;
+    }
+
+    .zones-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-legend ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
