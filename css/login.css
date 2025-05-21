@@ -369,7 +369,13 @@
     }
 }
 
-/* @media (max-width: 480px) {
+@media(max-width: 800px){
+    .login-header{
+        margin-top: 4rem
+    }
+}
+
+@media (max-width: 480px) {
     .login-section {
         padding: 2rem 1rem;
     }
@@ -391,4 +397,4 @@
     .image-overlay p {
         font-size: 1rem;
     }
-}  */
+} 
