@@ -378,7 +378,7 @@
 @media (max-width: 480px) {
 
         .login-header{
-        margin-top: 7rem;
+        margin-top: 9rem;
     }
     
     .login-section {
@@ -403,3 +403,8 @@
         font-size: 1rem;
     }
 } 
+@media (max-width: 313px){
+    .login-header{
+        margin-top: 13rem;
+    }
+}
