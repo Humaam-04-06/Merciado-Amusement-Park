@@ -367,7 +367,7 @@
     }
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .register-section {
         padding: 2rem 1rem;
     }
@@ -383,4 +383,22 @@
     .image-overlay p {
         font-size: 1rem;
     }
-}  */
+} 
+
+@media (max-width: 799px){
+    .register-header{
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 472px){
+    .register-header{
+        margin-top: 7.5rem;
+    }
+}
+
+@media (max-width: 312px){
+    .register-header{
+        margin-top: 10rem;
+    }
+}
