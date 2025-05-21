@@ -376,6 +376,11 @@
 }
 
 @media (max-width: 480px) {
+
+        .login-header{
+        margin-top: 7rem;
+    }
+    
     .login-section {
         padding: 2rem 1rem;
     }
