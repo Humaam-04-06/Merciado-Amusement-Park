@@ -145,6 +145,107 @@
         </div>
     </section>
 
+    <!-- Ticket Purchase Procedure Section -->
+    <section class="procedure-section">
+        <div class="procedure-container">
+            <div class="procedure-header" onclick="toggleProcedure()">
+                <h2>How to Purchase Tickets</h2>
+                <i class="fas fa-chevron-down" id="procedure-icon"></i>
+            </div>
+            
+            <!-- Video Tutorial Section -->
+            <div class="video-tutorial">
+                <h3>Watch Our Quick Guide</h3>
+                <div class="video-container">
+                    <video controls poster="./images/tickets.images/video-thumbnail.jpg">
+                        <source src="./video/ticket-purchase-guide.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="procedure-steps" id="procedure-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Ticket Type</h3>
+                        <p>Select from our three ticket options:</p>
+                        <ul>
+                            <li><strong>Weekday Pass ($49):</strong> Perfect for weekday visits with basic access</li>
+                            <li><strong>Weekend Pass ($69):</strong> Enhanced experience with fast pass and meal</li>
+                            <li><strong>Family Pack ($199):</strong> Best value for families of up to 4 people</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Select Your Visit Date</h3>
+                        <p>Choose your preferred date of visit. Please note:</p>
+                        <ul>
+                            <li>Book at least 24 hours in advance</li>
+                            <li>Weekend tickets are more expensive but include more benefits</li>
+                            <li>Family Pack is valid for any day of the week</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Choose Number of Tickets</h3>
+                        <p>Select the quantity of tickets needed:</p>
+                        <ul>
+                            <li>Regular passes: Up to 10 tickets per booking</li>
+                            <li>Family Pack: Fixed at 4 tickets</li>
+                            <li>Group bookings (10+ tickets): Contact our sales team</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Enter Personal Details</h3>
+                        <p>Provide the following information:</p>
+                        <ul>
+                            <li>Full name of the ticket holder</li>
+                            <li>Valid email address for confirmation</li>
+                            <li>Contact phone number</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Receive Confirmation</h3>
+                        <p>After booking, you will receive:</p>
+                        <ul>
+                            <li>Booking confirmation email with your tickets</li>
+                            <li>Unique booking ID for reference</li>
+                            <li>QR code for park entry</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step step-last">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Visit the Park</h3>
+                        <p>On your visit day:</p>
+                        <ul>
+                            <li>Arrive at least 30 minutes before opening</li>
+                            <li>Bring your confirmation email or QR code</li>
+                            <li>Present valid ID matching the booking name</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Booking Form Section -->
     <section id="booking-form" class="booking-section">
         <div class="booking-container">
@@ -219,5 +320,6 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="./js/tickets.js"></script>
 </body>
 </html> 
