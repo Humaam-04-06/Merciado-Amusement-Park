@@ -1,30 +1,3 @@
-// Form validation for ticket booking
-// const validateForm = (form) => {
-//     const inputs = form.querySelectorAll('input, select');
-//     let isValid = true;
-    
-//     inputs.forEach(input => {
-//         if (input.hasAttribute('required') && !input.value) {
-//             isValid = false;
-//             input.classList.add('error');
-//         } else {
-//             input.classList.remove('error');
-//         }
-//     });
-    
-//     return isValid;
-// };
-
-// Add form validation to all forms
-// document.querySelectorAll('form').forEach(form => {
-//     form.addEventListener('submit', (e) => {
-//         if (!validateForm(form)) {
-//             e.preventDefault();
-//             alert('Please fill in all required fields');
-//         }
-//     });
-// });
-
 // Add loading animation
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
