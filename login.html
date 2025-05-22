@@ -181,5 +181,108 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/login.js"></script>
+    <script>
+    function myfun() {
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        const emailRule = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!email) {
+            Swal.fire("Missing Email", "Please enter your email address.", "error");
+            return false;
+        }
+
+        if (!emailRule.test(email)) {
+            Swal.fire("Invalid Email", "Please enter a valid email like example@gmail.com", "error");
+            return false;
+        }
+
+        if (!password) {
+            Swal.fire("Missing Password", "Please enter your password.", "error");
+            return false;
+        }
+
+        if (password.length < 6) {
+            Swal.fire("Wrong Password", "The password you entered is incorrect.", "error");
+            return false;
+        }
+
+        // Extract name from email (e.g., john.doe@gmail.com => John Doe)
+        const namePart = email.split("@")[0];
+        const nameWords = namePart.split(/[._]/).map(word => word.charAt(0).toUpperCase() + word.slice(1));
+        const userName = nameWords.join(" ");
+
+        // Show welcome alert with name
+        Swal.fire({
+            icon: 'success',
+            title: `Welcome Back, ${userName}!`,
+            text: "Login successful. Redirecting...",
+            timer: 2000,
+            showConfirmButton: false
+        });
+
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 2000);
+
+        return false;
+    }
+       function handleForgotPassword() {
+        Swal.fire({
+            title: "Forgot Password",
+            html:
+                `<input type="email" id="swal-email" class="swal2-input" placeholder="Enter your registered email">
+                 <input type="password" id="swal-oldpass" class="swal2-input" placeholder="Enter old password">
+                 <input type="password" id="swal-newpass" class="swal2-input" placeholder="Enter new password">`,
+            confirmButtonText: "Change Password",
+            focusConfirm: false,
+            preConfirm: () => {
+                const email = document.getElementById("swal-email").value.trim();
+                const oldpass = document.getElementById("swal-oldpass").value.trim();
+                const newpass = document.getElementById("swal-newpass").value.trim();
+
+                if (!email || !oldpass || !newpass) {
+                    Swal.showValidationMessage("Please fill in all fields");
+                    return false;
+                }
+
+                const emailRule = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRule.test(email)) {
+                    Swal.showValidationMessage("Invalid email format");
+                    return false;
+                }
+
+                if (oldpass === newpass) {
+                    Swal.showValidationMessage("New password cannot be same as old password");
+                    return false;
+                }
+
+                if (newpass.length < 6) {
+                    Swal.showValidationMessage("New password must be at least 6 characters");
+                    return false;
+                }
+
+                // You can add API/database logic here
+                return { email, oldpass, newpass };
+            }
+        }).then((result) => {
+            if (result.isConfirmed && result.value) {
+                // Simulate success
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Password Changed!',
+                    text: 'Redirecting to login page...',
+                    timer: 2000,
+                    showConfirmButton: false
+                });
+
+                setTimeout(() => {
+                    window.location.href = "index.html";
+                }, 2000);
+            }
+        });
+    }
+</script>
 </body>
 </html> 
