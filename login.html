@@ -82,7 +82,8 @@
                     <p>Login to your account to continue</p>
                 </div>
                 
-                <form id="loginForm" class="login-form" onsubmit="return myfun()" action="forrr.html">
+                <form id="loginForm" class="login-form" onsubmit="return myfun()" action="forrr.html" novalidate>
+
                     <div class="form-group">
                         <input type="email" id="email" name="email" required>
                         <label for="email">Email Address</label>
@@ -98,7 +99,7 @@
                             <input type="checkbox" id="remember" name="remember">
                             <label for="remember">Remember me</label>
                         </div>
-                        <a href="#" class="forgot-password">Forgot Password?</a>
+                        <a href="#" class="forgot-password" onclick="handleForgotPassword()">Forgot Password?</a>
                     </div>
                     
                     <button type="submit" class="btn-login-submit">
@@ -181,7 +182,9 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/login.js"></script>
-    <script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
     function myfun() {
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
