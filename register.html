@@ -202,5 +202,88 @@
     </footer>
 
     <script src="./js/main.js"></script>
+        <script>
+        document.getElementById("registerForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let firstName = document.getElementsByName("firstName")[0].value.trim();
+        let lastName = document.getElementsByName("lastName")[0].value.trim();
+        let email = document.getElementsByName("email")[0].value.trim();
+        let password = document.getElementsByName("password")[0].value.trim();
+        let confirmPassword = document.getElementsByName("confirmPassword")[0].value.trim();
+        let phone = document.getElementsByName("phone")[0].value.trim();
+        let termsChecked = document.getElementById("terms").checked;
+
+        let emailRule = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let phoneRule = /^[0-9]{10,15}$/;
+
+        // Specific validations
+        if (!firstName) {
+            Swal.fire("Missing First Name", "Please enter your first name.", "error");
+            return;
+        }
+
+        if (!lastName) {
+            Swal.fire("Missing Last Name", "Please enter your last name.", "error");
+            return;
+        }
+
+        if (!email) {
+            Swal.fire("Missing Email", "Please enter your email address.", "error");
+            return;
+        }
+
+        if (!emailRule.test(email)) {
+            Swal.fire("Invalid Email", "Enter a valid email address like example@gmail.com", "error");
+            return;
+        }
+
+        if (!password) {
+            Swal.fire("Missing Password", "Please enter your password.", "error");
+            return;
+        }
+
+        if (password.length < 6) {
+            Swal.fire("Weak Password", "Password must be at least 6 characters long.", "error");
+            return;
+        }
+
+        if (!confirmPassword) {
+            Swal.fire("Missing Confirmation", "Please confirm your password.", "error");
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            Swal.fire("Password Mismatch", "Passwords do not match.", "error");
+            return;
+        }
+
+        if (!phone) {
+            Swal.fire("Missing Phone", "Please enter your phone number.", "error");
+            return;
+        }
+
+        if (!phoneRule.test(phone)) {
+            Swal.fire("Invalid Phone", "Enter a valid phone number with 10–15 digits.", "error");
+            return;
+        }
+
+        if (!termsChecked) {
+            Swal.fire("Terms Not Accepted", "You must agree to the Terms & Conditions.", "error");
+            return;
+        }
+
+        // If all validations pass
+        Swal.fire({
+            icon: 'success',
+            title: `Welcome, ${firstName}!`,
+            text: "Registration successful. Redirecting to login page...",
+            timer: 2500,
+            showConfirmButton: false
+        }).then(() => {
+            window.location.href = "login.html";
+        });
+    });
+    </script>
 </body>
 </html> 
